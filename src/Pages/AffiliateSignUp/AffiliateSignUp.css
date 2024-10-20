@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.affiliate-sign-up{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.affiliate-section1{
+    width: 25%;
+    background: #FDE7EB;
+    height: 100vh;
+    font-family: Montserrat;
+    padding: 0px 80px;
+}
+.affiliate-section1 h3{
+    font-size: 24px;
+    margin-top: 35px;
+}
+.affiliate-section1 hr{
+    width: 40px;
+    margin-left: 0; 
+    height: 2px;
+    background-color: #EB143A;
+    margin: 35px 0;
+    border: none;
+    /* margin-right: auto; */
+}
+.affiliate-section1 strong{
+    font-size: 32px;
+}
+.affiliate-section1 p{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.name2{
+    display: flex;
+    justify-content: space-between;
+}
+.affiliate-section2{
+    display: flex;
+    align-items: center;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    font-family: Poppins;
+    width: 65%;
+    justify-content: center;
+}
+.firstname input{
+    border: none;
+    background: #F4F4F4;
+    width: 255px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 20px;
+    outline: none;
+    padding-left: 15px;
+    /* margin-top: 0; */
+}
+.firstname p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.lastname input{
+    border: none;
+    background: #F4F4F4;
+    width: 255px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 20px;
+    outline: none;
+    padding-left: 15px;
+}
+.lastname p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.straight{
+    display: flex;
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 40px;
+    /* width: 219px; */
+    /* background: #F4F4F4; */
+}
+.straight input{
+    border: none;
+    background: #F4F4F4;
+    outline: none;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 0 5px 5px 0
+}
+.tel p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px
+}
+.email input{
+    border: none;
+    background: #F4F4F4;
+    width: 255px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 20px;
+    outline: none;
+    padding-left: 15px;
+}
+.email p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px
+}
+.password p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px
+}
+.align{
+    width: 97%;
+    background: #F4F4F4;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 40px;
+}
+.align input{
+    border: none;
+    background: #F4F4F4;
+    width: 97%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+}
+.sign-up{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.sign-up button{
+    width: 140px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #EB143A;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sign-up button:hover{
+    background-color: #fff;
+    color: #EB143A;
+    border: 1px solid #EB143A;
+}
+.end{
+    text-align: center;
+    font-size: 18px;
+}
+.login{
+    color: #EB143A;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login:hover{
+    color: #3939f5;
+}
+
+@media (min-width: 1001px) and (max-width: 1200px){
+    .affiliate-section1 strong{
+        font-size: 28px;
+    }
+    .affiliate-section1 p{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    .affiliate-section1{
+        padding: 0px 60px;
+    }
+    .firstname input{
+        width: 220px;
+    }
+    .lastname input{
+        width: 220px;
+    }
+    .straight input{
+        width: 135px;
+    }
+    .email input{
+        width: 220px;
+    }
+    .end{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+    .affiliate-section1 strong{
+        font-size: 24px;
+    }
+    .affiliate-section1 p{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .affiliate-section1{
+        padding: 0px 40px;
+    }
+    .firstname input{
+        width: 200px;
+    }
+    .lastname input{
+        width: 200px;
+    }
+    .straight input{
+        width: 115px;
+    }
+    .email input{
+        width: 200px;
+    }
+    .end{
+        font-size: 14px;
+    }
+    .sign-up button{
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px){
+    .affiliate-sign-up {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5%; /* Ensure equal spacing on both sides */
+      }
+    
+      .affiliate-section1 {
+        background-color: transparent;
+        padding: 0; /* Remove padding */
+        width: 100%; /* Occupy full width */
+        margin-bottom: 0; /* Remove unnecessary margin between sections */
+        height: auto;
+      }
+      .affiliate-section2{
+        display: flex;
+        align-items: center;
+        /* margin-left: auto;
+        margin-right: auto; */
+        font-family: Poppins;
+        width: 100%;
+        justify-content: flex-start;
+        }
+      .name{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+      }
+      .name2{
+        flex-direction: column;
+      }
+      .straight input{
+        width: 100%;
+      }
+      .straight{
+        width: 100%;
+      }
+      .email input{
+        width: 100%;
+      }
+     .firstname input{
+            width: 93%;
+        }
+    .align{
+            width: 100%;
+        }
+    .align input{
+            width: 100%;
+        }
+    .lastname input{
+    width: 93%;
+    }
+    .sign-up button {
+        width: 90vw; /* Maintain button size */
+    }
+    .end{
+        margin-bottom: 80px;
+    }
+    .affiliate-section1 strong{
+        font-size: 26px;
+    }
+    .affiliate-section1 p{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .mail{
+        width: 87.5vw;
+    }
+    .affiliate-section1 h3{
+        margin-top: 50px;
+    }
+}

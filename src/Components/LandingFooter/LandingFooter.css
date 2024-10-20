@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.landing-footer{
+    display: flex;
+    align-items: center;
+    background: #dddddd;
+    font-family: Montserrat;
+    width: 100%;
+    position: sticky;
+}
+.landing-footer h3{
+    font-size: 25px;
+    margin-left: 3%;
+}
+.landing-footer p{
+    font-size: 16px;
+    margin-left: 5%;
+}
+
+@media (max-width: 600px){
+    .landing-footer h3{
+        font-size: 20px;
+        margin-left: 3%;
+    }
+    .landing-footer p{
+        font-size: 12px;
+        margin-left: 5%;
+    }
+}

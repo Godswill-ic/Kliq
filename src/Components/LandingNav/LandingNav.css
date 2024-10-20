@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nav{
+    display: flex;
+    height: 64px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 8%;
+}
+.nav-logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: -5px;
+}
+.nav-logo h3{
+    font-size: 24px;
+    font-family: Montserrat;
+}
+.nav-links{
+    padding-right: 8%;
+}
+.nav-btn1{
+    background-color: transparent;
+    width: 72px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 50px;
+    border: none;
+    color: #EB143A;
+    font-family: Poppins;
+    cursor: pointer;
+    position: relative;
+}
+.nav-btn1:hover{
+    background-color: #EB143A;
+    color: #fff;
+}
+.nav-btn2{
+    width: 72px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: #EB143A;
+    color: #fff;
+    font-family: Poppins;
+    cursor: pointer;
+    border: none;
+    position: relative;
+}
+.nav-btn2:hover{
+    background-color: transparent;
+    color: #EB143A;
+}
+.dropdown{
+    width: 330px;
+    height: 160px;
+    border-radius: 20px;
+    position: absolute;
+    right: -70px;
+    top: 60px;
+    z-index: 10;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+}
+.dropdown-list-1{
+    width: 320px;
+    height: 78px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    justify-content: space-between;
+}
+.dropdown-list-2{
+    width: 320px;
+    height: 78px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #FDEDF0;
+    justify-content: space-between;
+}
+.dd-item-2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    width: 200px;
+    justify-content: start;
+}
+.dd-item-2 h5{
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.dd-item-2 p{
+    font-size: 13px;
+    margin-top: 0;
+}
+.dd-item-3{
+    margin-right: 20px;
+}
+.dd-item-1{
+    margin-left: 10px;
+    background-color: #E6E6E6;
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.dd-item-4{
+    margin-left: 10px;
+    background-color: #FEF6F7;
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+    padding-right: 8%;
+}
+
+/* media queries */
+@media (max-width: 600px){
+    .nav-links {
+        position: fixed;
+        height: 50vh;
+        width: 35%;
+        padding-right: 0;
+        right: 0;
+        top: 0;
+        background-color: #EB143A;
+        animation: move 1s ease-in-out;
+        display: none;
+    }
+    @keyframes move {
+        from{
+            right: -35%;
+            transition: 3s;
+        }
+        to{
+            right: 0px;
+            transition: 3s;
+        }
+    }
+    .open{
+        display: block;
+    }
+    .nav-btn1{
+        display: block;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+    }
+    .nav-btn1:hover{
+        color: #EB143A;
+        background-color: #fff;
+    }
+    .nav-btn2{
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #EB143A;
+        background-color: #fff;
+    }
+    .nav-btn2:hover{
+        background-color: #EB143A;
+        color: #fff;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-logo img{
+        display: none;
+    }
+    .dropdown{
+        right: 0px;
+        width: 310px;
+    }
+    .dropdown-list-1{
+        width: 300px;
+    }
+    .dropdown-list-2{
+        width: 300px;
+    }
+    .dd-item-2{
+        width: 180px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+    .nav-logo img{
+        display: none;
+    }
+    .dropdown{
+        right: 0px;
+    }
+}

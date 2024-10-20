@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.customized-dropdown select {
+    appearance: none; /* Remove default arrow */
+    padding-right: 40px; /* Add space for the custom arrow */
+    border: none;
+    width: 103%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  
+  .customized-dropdown {
+    position: relative;
+    width: 96%;
+    cursor: pointer;
+  }
+  
+  .customized-dropdown::after {
+    content: '▼'; /* Custom arrow */
+    position: absolute;
+    right: 0px; /* Space between arrow and border */
+    top: 60%;
+    transform: translateY(-60%);
+    pointer-events: none; /* So the arrow is not clickable */
+    font-size: 12px;
+  }
+  .merchant-sign-up{
+    display: flex;
+    align-items: center;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    font-family: Poppins;
+    width: 65%;
+    justify-content: center;
+  }
+  .merchant-sign-up form{
+    width: 70%;
+  }
+  .company input{
+    width: 98.5%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f4f4f4;
+    border-radius: 5px;
+  }
+  .industry input{
+    border: none;
+  }
+  .company p, .industry p, .dropdown2 p{
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  .end-comment{
+    font-size: 16px;
+    text-align: center;
+  }
+  .end-comment span{
+    color: #EB143A;
+    cursor: pointer;
+  }
+
+  @media (max-width: 800px){
+    .merchant-sign-up{
+        width: 100%;
+    }
+    .merchant-sign-up form{
+        width: 100%;
+      }
+      .end-comment{
+        margin-bottom: 120px;
+      }
+  }

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.affiliate-wrap{
+    padding-top: 64px;
+    /* display: flex; */
+}
+.sideMenu{
+    width: 15%;
+    position: fixed;
+}
+.affiliate-view-campaign{
+    margin-left: 25%;
+    margin-right: 13%;
+    font-family: Poppins;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.affiliate-view-campaign-heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.affiliate-view-campaign-heading strong{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.affiliate-view-campaign-img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.affiliate-view-campaign strong{
+    font-size: 14px;
+    font-weight: 500;
+}
+.affiliate-view-campaign-divs{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.sec--1{
+    display: flex;
+    width: 50%;
+}
+.sec--1 div{
+    background: #f4f4f4;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+.sec--1 div p{
+    font-size: 10px;
+    font-weight: 600;
+    color: #262b2e;
+    margin-bottom: -5px;
+}
+.sec--1 div span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #262b2e;
+}
+.top-left{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.bottom-right{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.affiliate-view-campaign-words{
+    width: 100%;
+    margin-top: 30px;
+}
+.affiliate-view-campaign-words p{
+    font-size: 13px;
+    font-weight: 400;
+}
+.affiliate-view-campaign-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.affiliate-view-campaign-btn button{
+    border-radius: 25px;
+    background: #eb143a;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    width: 181px;
+    height: 32px;
+    font-family: Poppins;
+}
+.affiliate-view-campaign-btn button:hover{
+    background: transparent;
+    color: #EB143A;
+    border:  1px solid #EB143A;
+}
+
+@media (max-width: 800px){
+    .sideMenu{
+        display: none;
+    }
+    .affiliate-view-campaign{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+    .sideMenu{
+        width: 20%;
+    }
+    .affiliate-view-campaign{
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 600px){
+    .affiliate-view-campaign-divs{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sec--1{
+        width: 100%;
+        gap: 10px;
+    }
+    .top-left{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    .top-right{
+        border-top-right-radius: 5px;
+    }
+    .bottom-left{
+        border-bottom-left-radius: 5px;
+    }
+    .bottom-right{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 5px;
+    }
+    .affiliate-view-campaign{
+        margin-top: 45px;
+    }
+}
